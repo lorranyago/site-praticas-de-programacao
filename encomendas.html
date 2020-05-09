@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos_modelo.css">
+        <title>Padaria Celeste</title>
+    </head>
+    <body>
+        <div id="interface">
+        <header>
+            <h1>Padaria Celeste</h1>
+        </header>
+        <hr>
+        <aside>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="receitas.html">RECEITAS</a></li>
+                    <li><a href="encomendas.html">ENCOMENDAS</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section id="pedido">
+            <h2>Faça Seu Pedido</h2>
+            <form method="POST" action="yago.albuquerque@unigranrio.br">
+                <div id="dados">
+                <fieldset>
+                <legend>Insira seus Dados</legend>
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" placeholder="NOME COMPLETO"/> 
+                    </div>
+                    <div>
+                        <label for="dnascimento">Data de Nascimento:</label>
+                        <input type="date" name="dnascimento" id="dnascimento" />
+                    </div>
+                    <div>
+                        <fieldset>
+                        <legend>Sexo:</legend>
+                            <input type="radio" name="sexo" value="masculino" id="masculino" checked>
+                            <label for="masculino">Masculino</label>
+                            <input type="radio" name="sexo" value="feminino" id="feminino">
+                            <label for="feminino">Feminino</label>
+                            <input type="radio" name="sexo" value="genero" id="genero">
+                            <label for="genero">Prefiro não responder</label>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <label>Telefone:</label>
+                        <input type="tel" name="telefone" placeholder="Ex: (99) 99999-9999" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}" maxlength="15" />
+                    </div> 
+                </fieldset>
+                <fieldset>
+                <legend>Endereço</legend>
+                    <div>
+                        <label for="rua">Rua</label>
+                        <input type="text" name="rua" id="rua" required />
+                    </div>
+                    <div>
+                        <label>Número:</label>
+                        <input type="number" name="enumero" min="1" max="1000" value="0" required />
+                    </div>
+                    <div>
+                        <label for="complemento">Complemento:</label>
+                        <input type="text" name="complemento" id="complemento" required />
+                    </div>
+                    <div>
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" name="cidade" id="cidade" required />
+                    </div>
+                    <div>
+                        <label >Estado:</label>
+                        <select>
+                            <option>Rio de Janeiro</option>
+                            <option>São Paulo</option>
+                            <option>Minas Gerais</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                    <legend>Pedido:</legend>
+                    <label>Qual delicia:</label>
+                    <select>
+                        <optgroup label="Bolos">
+                            <option>Cupcake</option>
+                            <option>Brownie</option>
+                        </optgroup>
+                        <optgroup label="Salgados">
+                            <option>Coxinha</option>
+                            <option>Kibe</option>
+                        </optgroup>
+                    </select>
+                    </div>
+                    <div>
+                        <label>Quantidade:</label>
+                        <input type="number" name="quantidade" min="0" max="1000" step="10">
+                    </div>
+                    <div>
+                        <fieldset>
+                        <legend>Entrega:</legend>
+                            <input type="radio" name="entrega" value="residencia" id="residencia" checked>
+                            <label for="residencia">Residência</label>
+                            <input type="radio" name="entrega" value="buscar" id="buscar">
+                            <label for="buscar">Loja</label>
+                        </fieldset>
+                        </div>
+                        <div>
+                            <input type="submit" value="Fazer Pedido">
+                        </div>
+                </fieldset>
+                </div>
+            </form>
+        </section>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+body{
+    background: linear-gradient(gold, yellow);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    margin-bottom: 0px;
+}
+div#interface{
+    background-color: honeydew;
+    width: 85%;
+    margin: 0 auto;
+    border: 2px solid goldenrod;
+    box-shadow: 5px 5px 10px khaki;
+}
+header{
+    text-align: center;
+    display: block;
+    margin: 10px;
+    padding: 20px;
+    background-color: goldenrod;
+    border: black 2px solid;
+}
+aside{
+    width: 250px;
+    display: block;
+    float: left;
+    position: relative;
+}
+section{
+    width: 800px;
+    display: block;
+    margin-left: 300px;
+    padding: 20px;
+    float: rigth;
+    border-left: black 2px solid;
+    position: relative;
+    background-color: khaki;
+}
+footer{
+    clear: both;
+    display: flex;
+	align-items: center;
+    justify-content: center;
+}
+nav#menu{
+    background-color: rgba(255, 250, 255, 0.5);
+}
+nav#menu ul{
+    text-align: center;
+    list-style: none;    
+}
+nav#menu li{
+    background-color: goldenrod;
+    margin: 5px;
+    padding: 5px;
+    text-transform: none;
+}
+img{
+    display: inline-block;
+    box-shadow: 2px 2px 5px goldenrod ;
+}
+form, h2, h3{
+    background-color: honeydew;
+    padding: 5px;
+    text-align: center;
+}
+h1{
+    font-weight: bolder;
+}
